@@ -20,7 +20,7 @@ Este repositório contém uma suíte de testes automatizados E2E utilizando **We
 
 ## 📁 Estrutura de Pastas
 
-```text
+```
 .
 ├── test/
 │   ├── pageobjects/
@@ -38,8 +38,9 @@ pageobjects/: Page Objects reutilizáveis para cada página do fluxo.
 specs/: Arquivos de teste (suites e specs) escritos em TypeScript.
 wdio.conf.ts: Configuração do WebdriverIO.
 tsconfig.json: Configuração do TypeScript.
+```
 
-## 🚀 Como rodar o projeto**
+## 🚀 Como rodar o projeto
 1. Instale as dependências
 `npm install`
 
@@ -50,7 +51,7 @@ Por padrão, os testes rodam em modo headless (sem interface gráfica).
 
 Para rodar em modo visual, ajuste o wdio.conf.ts conforme necessário.
 
-##📝 Escrevendo e organizando testes
+## 📝 Escrevendo e organizando testes
 
 Os testes ficam em test/specs/ e usam a sintaxe Mocha (describe/it).
 
@@ -58,7 +59,8 @@ Os Page Objects ficam em test/pageobjects/ e encapsulam a lógica de interação
 
 Exemplo de importação e uso de Page Object em um teste:
 
-`import HomePage from '../pageobjects/home.page';
+```
+import HomePage from '../pageobjects/home.page';
 import SignupPage from '../pageobjects/signup.page';
 
 describe('Cadastro de usuário', () => {
@@ -67,15 +69,16 @@ describe('Cadastro de usuário', () => {
     await HomePage.goToSignup();
     // ... continue o fluxo usando os métodos dos Page Objects
   });
-});`
+});
+```
 
 
-### 💡 Dicas
+## 💡 Dicas
 
 Para gerar relatórios (ex: Allure), instale o plugin correspondente e ajuste o wdio.conf.ts.
 Para integração contínua (CI), adicione um workflow no .github/workflows/ (exemplo disponível sob demanda).
 
-###🤝 Contribuindo
+## 🤝 Contribuindo
 
 1. Fork este repositório
 2. Crie uma branch:
