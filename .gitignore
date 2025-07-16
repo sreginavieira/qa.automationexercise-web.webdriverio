@@ -1,0 +1,14 @@
+export default class HomePage {
+    public get signupLoginBtn() {
+        return $('a[href="/login"]');
+    }
+
+    public async open() {
+        await browser.url('/');
+    }
+
+    public async goToSignup() {
+        await this.signupLoginBtn.waitForDisplayed();
+        await this.signupLoginBtn.click();
+    }
+}

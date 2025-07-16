@@ -1,0 +1,19 @@
+{
+  "name": "automationexercise-tests",
+  "version": "1.0.0",
+  "description": "Exemplo WebdriverIO com TypeScript e chromedriver-service",
+  "scripts": {
+    "test": "wdio run wdio.conf.ts"
+  },
+  "devDependencies": {
+    "@wdio/cli": "^9.17.0",
+    "@wdio/local-runner": "^9.17.0",
+    "@wdio/mocha-framework": "^9.17.0",
+    "@wdio/spec-reporter": "^9.17.0",
+    "@wdio/chromedriver-service": "^8.34.0",
+    "webdriverio": "^9.17.0",
+    "typescript": "^5.4.0",
+    "ts-node": "^10.9.2",
+    "@types/node": "^20.11.30"
+  }
+}
